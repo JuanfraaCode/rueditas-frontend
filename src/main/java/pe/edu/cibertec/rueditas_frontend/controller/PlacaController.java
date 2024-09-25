@@ -50,7 +50,7 @@ public class PlacaController {
 
                 if (placaResponseDTO.codigo().equals("00")){
                     //Si encontro la placa, inicie y muestre los datos
-                    PlacaModel placaModel = new PlacaModel("00", "", placaRequestDTO.placa(), placaResponseDTO.marca(), placaResponseDTO.modelo(),placaResponseDTO.nroAsientos(),placaResponseDTO.precio(),placaResponseDTO.precio());
+                    PlacaModel placaModel = new PlacaModel("00", "", placaRequestDTO.placa(), placaResponseDTO.marca(), placaResponseDTO.modelo(), placaResponseDTO.nroAsientos(), placaResponseDTO.precio(),placaResponseDTO.color());
                     model.addAttribute("placaModel", placaModel);
                     return "principal";
                 } else {

@@ -9,11 +9,12 @@
 <body>
     <div class="container">
       <div class="alert alert-success" role="success" th:if="${placaModel.codigo == '00'}">
-        Bienvenido <span th:text="${placaModel.placa}"></span>
+         <span>RUEDITAS</span>
       </div>
 
       <div class="mb-3">
         <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Placa: <span th:text="${placaModel.placa}"></span></a>
           <a href="#" class="list-group-item list-group-item-action">Marca: <span th:text="${placaModel.marca}"></span></a>
           <a href="#" class="list-group-item list-group-item-action">Modelo: <span th:text="${placaModel.modelo}"></span></a>
           <a href="#" class="list-group-item list-group-item-action">Número de Asientos: <span th:text="${placaModel.nroAsientos}"></span></a>
